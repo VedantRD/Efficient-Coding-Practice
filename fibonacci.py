@@ -12,6 +12,7 @@ def fibonacci(n):
 
 # =================== Memoization Top Down approach ============================
 
+
 def fibonacciM(n, memo):
     if n <= 0:
         return 0
@@ -23,7 +24,6 @@ def fibonacciM(n, memo):
         memo[n] = fibonacciM(n-1, memo) + fibonacciM(n-2, memo)
         # print(memo)
         return memo[n]
-        
 
 
 memo = {0: 0, 1: 1}
@@ -42,5 +42,6 @@ def fibonacciT(n):
         for i in range(2, n+1):
             fibs.append(fibs[i-1]+fibs[i-2])
         return fibs[n]
+
 
 print(fibonacciT(35))

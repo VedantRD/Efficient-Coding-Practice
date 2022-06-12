@@ -9,7 +9,7 @@
 # We can see that this approach will fail in some situations. For example, if the denominations are 1,3,5 and 6 and the cashier has to return $8 to the customer, then, as per greedy approach, the solution will be 6,1,1 even though the optimal solution would have been 5 and 3.
 
 def coin_change(amount, coins):
-    coins.sort(reverse = True)
+    coins.sort(reverse=True)
     i = 0
     c = 0
     while(amount != 0):
@@ -19,6 +19,7 @@ def coin_change(amount, coins):
         else:
             i += 1
     return c
+
 
 print(coin_change(15, [1, 2, 5, 10]))
 print(coin_change(8, [1, 3, 5, 6]))

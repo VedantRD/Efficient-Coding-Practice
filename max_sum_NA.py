@@ -7,7 +7,7 @@
 # space complexity = O(n) extra space
 
 def find_max_sum(arr):
-    maxSumArr = [];
+    maxSumArr = []
     for i in range(len(arr)):
         if i == 0:
             maxSumArr.append(arr[i])
@@ -41,6 +41,6 @@ def find_max_sum_efficient(arr):
 
 
 # arr = [3,2,7,10]
-arr = [-2,1,3,-4,5]
+arr = [-2, 1, 3, -4, 5]
 # print(find_max_sum(arr))
 print(find_max_sum_efficient(arr))

@@ -10,18 +10,20 @@
 # output => 5
 
 grid = [
-        [1,0,0,0,1],
-        [1,0,1,0,0],
-        [0,0,1,1,1],
-        [0,0,0,0,1],
-        [1,1,0,1,0]
-    ]
+    [1, 0, 0, 0, 1],
+    [1, 0, 1, 0, 0],
+    [0, 0, 1, 1, 1],
+    [0, 0, 0, 0, 1],
+    [1, 1, 0, 1, 0]
+]
 
-# -1,0  -1,1  0,1  1,1  1,0  1,-1  0,-1  -1,-1 
+# -1,0  -1,1  0,1  1,1  1,0  1,-1  0,-1  -1,-1
 
-def printGrid(grid):    
+
+def printGrid(grid):
     for i in range(len(grid)):
         print(grid[i])
+
 
 def find_animals(grid):
     maxCount = 0
@@ -35,6 +37,7 @@ def find_animals(grid):
                 if count > maxCount:
                     maxCount = count
     print(maxCount)
+
 
 def dfs(row, column, grid):
     rowVect = [-1, -1, 0, 1, 1, 1, 0, -1]
@@ -54,6 +57,7 @@ def canMove(row, column, grid):
         return True
     else:
         return False
+
 
 printGrid(grid)
 find_animals(grid)

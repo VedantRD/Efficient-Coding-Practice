@@ -16,5 +16,6 @@ def count_minimum_steps(n):
         count += 1
     return count
 
+
 n = 6
 print(count_minimum_steps(n))

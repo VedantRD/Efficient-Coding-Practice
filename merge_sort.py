@@ -11,6 +11,7 @@ def merge(l, r):
             ri += 1
     return newArr + l[li:] + r[ri:]
 
+
 def merge_sort(arr):
     if len(arr) < 2:
         return arr
@@ -19,6 +20,7 @@ def merge_sort(arr):
     l = merge_sort(arr[0:mid])
     r = merge_sort(arr[mid:])
     return merge(l, r)
+
 
 arr = [10, 2, 14, 7, 9, 2]
 # mid = len(arr) // 2

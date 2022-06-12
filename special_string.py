@@ -42,16 +42,18 @@ def check_special(str):
         #     else:
         #         return True
 
+
 def find_substrings(str):
     count = 0
     for i in range(len(str)):
         temp = ""
-        for j in range(i,len(str)):
+        for j in range(i, len(str)):
             temp += str[j]
             if(check_special(temp)):
                 print(temp)
                 count += 1
     return count
+
 
 print(find_substrings('aaaa'))
 # print(check_special('abc'))

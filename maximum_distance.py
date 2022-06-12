@@ -13,5 +13,6 @@ def find_maximum_distance(arr):
 
     return maxD
 
-arr = [3,2,1,2,1,4,5,8,6,7,4,2,10]
+
+arr = [3, 2, 1, 2, 1, 4, 5, 8, 6, 7, 4, 2, 10]
 print(find_maximum_distance(arr))
